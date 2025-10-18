@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> 
+    <script 
+        src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js">
+    </script> 
+    <script 
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
+    </script> 
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js">
+    </script> 
+    <title>Survey Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="survey-container">
+    <img src="logo.png" class="logo" alt="IU Logo">
+
+    <h2>Survey</h2>
+    <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+
+    <h5>Your information:</h5>
+    <form>
+      <div class="form-group mb-1">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control w-50" id="firstName">
+      </div>
+
+      <div class="form-group mb-1">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control w-50" id="lastName">
+      </div>
+
+      <div class="form-group mb-1">
+        <label for="email">Email</label>
+        <input type="email" class="form-control w-50" id="email">
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="dob">Date of Birth</label>
+        <input type="date" class="form-control w-50" id="dob">
+      </div>
+
+      <h5>How did you hear about us?</h5>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="source" id="search" value="search">
+        <label class="form-check-label" for="search">Search engine</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="source" id="word" value="word">
+        <label class="form-check-label" for="word">Word of mouth</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="source" id="social" value="social">
+        <label class="form-check-label" for="social">Social Media</label>
+      </div>
+      <div class="form-check form-check-inline mb-3">
+        <input class="form-check-input" type="radio" name="source" id="other" value="other">
+        <label class="form-check-label" for="other">Other</label>
+      </div>
+
+      <h5>Would you like to receive announcements<br>about new CDs and special offers?</h5>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="like">
+        <label class="form-check-label" for="like">YES, I'd like that.</label>
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="emailAnnouncements">
+        <label class="form-check-label" for="emailAnnouncements">YES, please send me email announcements.</label>
+      </div>
+
+      <div class="form-group">
+        <label for="contactMethod">Please contact me by:</label>
+        <select class="form-control" id="contactMethod">
+          <option>Email or postal mail</option>
+          <option>Email only</option>
+          <option>Postal mail only</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-primary btn-submit">Submit</button>
+    </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

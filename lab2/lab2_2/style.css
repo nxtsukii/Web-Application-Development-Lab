@@ -1,0 +1,67 @@
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.survey-container {
+    border: 1px solid #007b7f;
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 25px 30px;
+    background-color: #fff;
+}
+
+.logo {
+    width: 100px;
+    display: block;
+    margin: 0;
+}
+
+h2 {
+    color: #007b7f;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+h5 {
+    color: #007b7f;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+p {
+    font-size: 14px;
+}
+
+label {
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+
+.form-control {
+    height: 28px;
+    font-size: 0.9rem;
+    padding: 3px 8px;
+}
+
+.form-check-label {
+    font-weight: normal;
+}
+
+.btn-submit {
+    background-color: #e6e6e6;
+    color: black;
+    border: 1px solid #999;
+    padding: 4px 12px;
+    font-size: 0.9rem;
+}
+
+.btn-submit:hover {
+    background-color: #dcdcdc;
+}
+
+select.form-control {
+    width: auto;
+    display: inline-block;
+}
