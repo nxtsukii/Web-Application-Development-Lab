@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI';
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            color: #333;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 { text-align: center; color: #667eea; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: #f5f5ff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .section-title {
+            margin-top: 30px;
+            color: #667eea;
+            font-size: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th { background-color: #667eea; color: white; }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <h1>📊 Product Statistics Dashboard</h1>
+
+    <!-- TOP CARDS -->
+    <div class="grid">
+
+        <!-- Total Value -->
+        <div class="card">
+            <h2>Total Value</h2>
+            <p th:text="'$' + ${totalValue}">0</p>
+        </div>
+
+        <!-- Average Price -->
+        <div class="card">
+            <h2>Average Price</h2>
+            <p th:text="'$' + ${avgPrice}">0</p>
+        </div>
+
+        <!-- Dynamic Category Cards -->
+        <div class="card" th:each="cat : ${categoryCounts}">
+            <h2 th:text="${cat.key}">Category</h2>
+            <p th:text="${cat.value}">0</p>
+        </div>
+
+    </div>
+
+    <!-- LOW STOCK -->
+    <h2 class="section-title">⚠ Low Stock (Below 10)</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="p : ${lowStock}">
+            <td th:text="${p.name}"></td>
+            <td th:text="${p.quantity}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- RECENT PRODUCTS -->
+    <h2 class="section-title">🕒 Recently Added Products</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Created At</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="p : ${recent}">
+            <td th:text="${p.name}"></td>
+            <td th:text="${p.createdAt}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>
