@@ -1,0 +1,275 @@
+{
+  "id": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+  "collectionName": "CustomerAPI",
+  "creatredOn": "2025-12-06T08:03:20.516Z",
+  "folders": [],
+  "requests": [
+    {
+      "url": "http://localhost:8080/api/customers",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "d4d7e08a-891a-4cc2-824f-04e6b5697b54",
+      "name": "Test 1",
+      "collectionId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "containerId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "collectionName": "CustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/1",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "3ac69ac8-16aa-46b0-9d7f-806d98cf6381",
+      "name": "Test 2",
+      "collectionId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "containerId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "collectionName": "CustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers",
+      "method": "POST",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "3a3632d0-9d58-476f-ab25-9a3fc78387b0",
+      "name": "Test 3",
+      "collectionId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "containerId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "collectionName": "CustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {
+          "customerCode": "C006",
+          "fullName": "David Miller",
+          "email": "david.miller@example.com",
+          "phone": "+1555010666",
+          "address": "999 Broadway, Seattle, WA 98101"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/6",
+      "method": "PUT",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "customerCode": "C006",
+          "fullName": "David Miller Jr.",
+          "email": "david.miller.jr@example.com",
+          "phone": "+1555010777",
+          "address": "1000 Broadway, Seattle, WA 98101"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "e8111579-6b3f-4a35-b346-8cf964898fc3",
+      "name": "Test 4",
+      "collectionId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "containerId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "collectionName": "CustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/6",
+      "method": "DELETE",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "fcb027c4-f69b-421a-95e6-4d4e8636e1c5",
+      "name": "Test 5",
+      "collectionId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "containerId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "collectionName": "CustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/search?keyword=john",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "df77bc56-c466-474e-a7ee-faad31d10fa0",
+      "name": "Test 6",
+      "collectionId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "containerId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "collectionName": "CustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers",
+      "method": "POST",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "customerCode": "C",
+          "email": "invalid-email"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "ee55f1f1-676f-47fb-9141-4d4dfdd21bf8",
+      "name": "Test 7",
+      "collectionId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "containerId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "collectionName": "CustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/999",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "acdbcea9-ada8-4a3b-9e16-72cb736ac8b0",
+      "name": "Test 8",
+      "collectionId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "containerId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "collectionName": "CustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers",
+      "method": "POST",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "customerCode": "C007",
+          "fullName": "Test User",
+          "email": "john.doe@example.com"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "1b8e0da9-2cc8-44ce-99c9-78fc2b1ca01a",
+      "name": "Test 9",
+      "collectionId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "containerId": "5ebed0bd-63a6-41fd-be85-14a77760d9af",
+      "collectionName": "CustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    }
+  ]
+}
