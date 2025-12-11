@@ -1,0 +1,315 @@
+{
+  "id": "4684d711-a549-461d-98d6-b2574798b3cf",
+  "collectionName": "CustomerAPI_Homework",
+  "creatredOn": "2025-12-11T14:45:13.793Z",
+  "folders": [],
+  "requests": [
+    {
+      "url": "http://localhost:8080/api/customers/search?keyword=john",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "b8c0d79f-d97b-4657-a30e-924f5c45de31",
+      "name": "Ex 5.1",
+      "collectionId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "containerId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "collectionName": "CustomerAPI_Homework",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/status/ACTIVE",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "e0104c84-6d7a-48cb-8778-b4ebdaaf0062",
+      "name": "Ex 5.2 (1)",
+      "collectionId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "containerId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "collectionName": "CustomerAPI_Homework",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/status/INACTIVE",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "fb0617d6-cdce-4802-9b37-e146a4bcfdc2",
+      "name": "Ex 5.2 (2)",
+      "collectionId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "containerId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "collectionName": "CustomerAPI_Homework",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/advanced-search?name=john&status=ACTIVE",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "dbbf405a-9a44-4ea1-901b-d6eeee512473",
+      "name": "Ex 5.3",
+      "collectionId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "containerId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "collectionName": "CustomerAPI_Homework",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/page?page=0&size=5",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "d1410234-57d0-48df-b6ce-a0956cfa3031",
+      "name": "Ex 6.1 (1)",
+      "collectionId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "containerId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "collectionName": "CustomerAPI_Homework",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/page?page=1&size=10",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "cb11f9f5-222a-45f6-9b06-a884ef5fcb63",
+      "name": "Ex 6.1 (2)",
+      "collectionId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "containerId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "collectionName": "CustomerAPI_Homework",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/sorted?sortBy=fullName&sortDir=asc",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "7012f752-c2e9-44cb-b741-f4c959fa2f98",
+      "name": "Ex 6.2 (asc)",
+      "collectionId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "containerId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "collectionName": "CustomerAPI_Homework",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/sorted?sortBy=createdAt&sortDir=desc",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "22bc03d2-b496-4f97-8d48-d7eca039efd3",
+      "name": "Ex 6.2 (desc)",
+      "collectionId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "containerId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "collectionName": "CustomerAPI_Homework",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/paged-sorted?page=0&size=5&sortBy=fullName&sortDir=asc",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "72fdba2f-6ef4-4def-b4d1-a3e3bc8b1d7f",
+      "name": "Ex 6.3",
+      "collectionId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "containerId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "collectionName": "CustomerAPI_Homework",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/1",
+      "method": "PUT",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "customerCode": "C001",
+          "fullName": "John Updated",
+          "email": "john.updated@example.com",
+          "phone": "+1555999936",
+          "address": "New Address"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "aede1196-6fd0-4253-9c5f-541fa05a585c",
+      "name": "Ex 7 (PUT)",
+      "collectionId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "containerId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "collectionName": "CustomerAPI_Homework",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/1",
+      "method": "PATCH",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "fullName": "John Partially Updated"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "f325a446-6469-4a28-94b0-5acaa24dad85",
+      "name": "Ex 7 (PATCH)",
+      "collectionId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "containerId": "4684d711-a549-461d-98d6-b2574798b3cf",
+      "collectionName": "CustomerAPI_Homework",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    }
+  ]
+}
