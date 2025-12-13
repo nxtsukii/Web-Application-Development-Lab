@@ -1,0 +1,185 @@
+{
+  "id": "bbdbe311-e803-4592-a9a3-63ec69eea8c5",
+  "collectionName": "SecureCustomerAPI",
+  "creatredOn": "2025-12-13T09:35:11.736Z",
+  "folders": [],
+  "requests": [
+    {
+      "url": "http://localhost:8080/api/auth/register",
+      "method": "POST",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "username": "testuser",
+          "email": "test@example.com",
+          "password": "password123",
+          "fullName": "Test User"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "df135878-9bf7-442c-bb4e-d676e09601f2",
+      "name": "Test registration",
+      "collectionId": "bbdbe311-e803-4592-a9a3-63ec69eea8c5",
+      "containerId": "bbdbe311-e803-4592-a9a3-63ec69eea8c5",
+      "collectionName": "SecureCustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/auth/login",
+      "method": "POST",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "username": "admin",
+          "password": "password123"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "5669ac18-d032-4b56-bd57-c90c9d7891f8",
+      "name": "Test login",
+      "collectionId": "bbdbe311-e803-4592-a9a3-63ec69eea8c5",
+      "containerId": "bbdbe311-e803-4592-a9a3-63ec69eea8c5",
+      "collectionName": "SecureCustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "596f779f-cfdc-4899-a4a5-296ec833b3ee",
+      "name": "Test protected endpoint (without token)",
+      "collectionId": "bbdbe311-e803-4592-a9a3-63ec69eea8c5",
+      "containerId": "bbdbe311-e803-4592-a9a3-63ec69eea8c5",
+      "collectionName": "SecureCustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc2NTYxOTQ0MywiZXhwIjoxNzY1NzA1ODQzfQ.KY42c5YBCs-agUBqJRDvx6L20J2S8L6n_MeJRQ_Xkfq9rJCUK2B2Snf8lRS1Z5rg6frE-LO3jmY1DteUB6amkw"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "6c36f62a-ffb1-4c57-b5d9-b9409b8e0bfe",
+      "name": "Test protected endpoint (with token)",
+      "collectionId": "bbdbe311-e803-4592-a9a3-63ec69eea8c5",
+      "containerId": "bbdbe311-e803-4592-a9a3-63ec69eea8c5",
+      "collectionName": "SecureCustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/1",
+      "method": "DELETE",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNzY1NjE5NzgzLCJleHAiOjE3NjU3MDYxODN9.mEbGKQSAlinvvgFqNIC1JU_hvc0RU8BROz8QquHJKqzo5ozBltymGPwkXxS-e-SQNYdkV5LzzJh-U589297Fqw",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "3537fab2-b081-4a42-9341-de129f09f2d4",
+      "name": "Test authorization (USER trying to DELETE)",
+      "collectionId": "bbdbe311-e803-4592-a9a3-63ec69eea8c5",
+      "containerId": "bbdbe311-e803-4592-a9a3-63ec69eea8c5",
+      "collectionName": "SecureCustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/customers/1",
+      "method": "DELETE",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc2NTYyMDIwNywiZXhwIjoxNzY1NzA2NjA3fQ.bgpybVpNniLIKgzqiV4lOTfUKr6BjGVbyYXGY8P4VgT5NWIb0Hrcz8Ifdon9QTbA8KfNBkZQMjbGWv8Aj0vOLg",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "c0c67ce0-2ee5-40de-b0c1-b4ba47652910",
+      "name": "Test authorization (ADMIN can DELETE)",
+      "collectionId": "bbdbe311-e803-4592-a9a3-63ec69eea8c5",
+      "containerId": "bbdbe311-e803-4592-a9a3-63ec69eea8c5",
+      "collectionName": "SecureCustomerAPI",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    }
+  ]
+}
