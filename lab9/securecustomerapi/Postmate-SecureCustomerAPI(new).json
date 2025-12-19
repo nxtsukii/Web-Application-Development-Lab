@@ -1,0 +1,464 @@
+{
+  "id": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+  "collectionName": "SecureCustomerAPI(new)",
+  "creatredOn": "2025-12-19T14:14:46.951Z",
+  "folders": [],
+  "requests": [
+    {
+      "url": "http://localhost:8080/api/auth/change-password",
+      "method": "PUT",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNzY2MTU0MDIzLCJleHAiOjE3NjYyNDA0MjN9.-ZNkcZ7ki7mniUvqhHTRXNaTKBggaD9G9V036gO8r4oiGYU75me9yLHh-QTWvinNfo_yz5F96KuKWd5kMqc-UQ",
+        "Content-Type": "application/json"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "ffe3a6d4-3e9f-448b-87e1-1340bedb9dd3",
+      "name": "Test 6.1.1",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {
+          "currentPassword": "password123",
+          "newPassword": "newpass456",
+          "confirmPassword": "newpass456"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/auth/change-password",
+      "method": "PUT",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNzY2MTU0MDIzLCJleHAiOjE3NjYyNDA0MjN9.-ZNkcZ7ki7mniUvqhHTRXNaTKBggaD9G9V036gO8r4oiGYU75me9yLHh-QTWvinNfo_yz5F96KuKWd5kMqc-UQ",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "currentPassword": "wrongpassword",
+          "newPassword": "newpass456",
+          "confirmPassword": "newpass456"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "6e088f09-b7fe-4a6a-b410-b6b1442978f8",
+      "name": "Test 6.1.2",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/auth/change-password",
+      "method": "PUT",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNzY2MTU0MDIzLCJleHAiOjE3NjYyNDA0MjN9.-ZNkcZ7ki7mniUvqhHTRXNaTKBggaD9G9V036gO8r4oiGYU75me9yLHh-QTWvinNfo_yz5F96KuKWd5kMqc-UQ",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "currentPassword": "newpass456",
+          "newPassword": "newpass789",
+          "confirmPassword": "password123"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "3196bb80-27f7-4074-ae79-d09e51f19463",
+      "name": "Test 6.1.3",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/auth/forgot-password",
+      "method": "POST",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "email": "john@example.com"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "a9eb70b6-956d-4b21-abc0-f52bdcc49b36",
+      "name": "Test 6.2.1",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/auth/reset-password",
+      "method": "POST",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "token": "0796bb77-8ace-4da3-bb2e-b18c4f5db6fa",
+          "newPassword": "resetpass123"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "8918067c-144b-486a-bcda-b4fc85afe752",
+      "name": "Test 6.2.2",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/users/profile",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNzY2MTU0MDIzLCJleHAiOjE3NjYyNDA0MjN9.-ZNkcZ7ki7mniUvqhHTRXNaTKBggaD9G9V036gO8r4oiGYU75me9yLHh-QTWvinNfo_yz5F96KuKWd5kMqc-UQ"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "b00b4975-b5c4-4169-8d4c-94ec23a29b8e",
+      "name": "Test 7.1",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/users/profile",
+      "method": "PUT",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNzY2MTU0MDIzLCJleHAiOjE3NjYyNDA0MjN9.-ZNkcZ7ki7mniUvqhHTRXNaTKBggaD9G9V036gO8r4oiGYU75me9yLHh-QTWvinNfo_yz5F96KuKWd5kMqc-UQ",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "fullName": "John Updated",
+          "email": "john.updated@example.com"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "61967242-08b7-4769-a115-20fae0c92078",
+      "name": "Test 7.2",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/users/account?password=resetpass123",
+      "method": "DELETE",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNzY2MTU1MDcwLCJleHAiOjE3NjYyNDE0NzB9.gYmwwLIxzeU2dPnjwJhViYylapFQENoo4jbypMNwqIlAXLETvv2kJlC-Iq_4o_yOpeYN7h-cRj3tsEm8_XPoKQ",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "efb5a906-51b1-4b4a-bd7d-4ba06d67b70e",
+      "name": "Test 7.3",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/admin/users",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc2NjE1NTIwMCwiZXhwIjoxNzY2MjQxNjAwfQ.nbxhvZquwVQSnGYhesQ05e4W-7NECZL0IVFCkoRRBg_8Y3H6aSdqCDrEIuIxAm2Fgmsc_drQUsFnZ8SFPqPaoQ"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "dbe996ab-8843-4b76-b127-cc6eea36196c",
+      "name": "Test 8.1.1",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/admin/users",
+      "method": "GET",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Authorization": "Bearer yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNzY2MTU1MDcwLCJleHAiOjE3NjYyNDE0NzB9.gYmwwLIxzeU2dPnjwJhViYylapFQENoo4jbypMNwqIlAXLETvv2kJlC-Iq_4o_yOpeYN7h-cRj3tsEm8_XPoKQ"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "b86ec676-0abf-4d07-bb99-e106b3e8ddc4",
+      "name": "Test 8.1.2",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/admin/users/2/role",
+      "method": "PUT",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc2NjE1NTQxMSwiZXhwIjoxNzY2MjQxODExfQ.6JcdUOkMARpq7ItFRn3RsWABotwSMRYA9IsYff2SXxef7_5YgXZw5vhUP4KauE2av4WJEmayVFrRSEZzKvb0Xw",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "role": "ADMIN"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "c7fa03ef-5d37-4050-8637-429f8e9281e5",
+      "name": "Test 8.2",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/admin/users/2/status",
+      "method": "PATCH",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc2NjE1NTQxMSwiZXhwIjoxNzY2MjQxODExfQ.6JcdUOkMARpq7ItFRn3RsWABotwSMRYA9IsYff2SXxef7_5YgXZw5vhUP4KauE2av4WJEmayVFrRSEZzKvb0Xw",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {},
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "f81b3d57-b154-42ac-bc39-3fd2d806bda0",
+      "name": "Test 8.3",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/auth/login",
+      "method": "POST",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "username": "john",
+          "password": "resetpass123"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "dbd72db0-d51e-40de-959b-1ad35a5ead72",
+      "name": "Test 9.1",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/auth/refresh",
+      "method": "POST",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "json": {
+          "refreshToken": "99f2eeb3-e1cb-43b3-9855-6158aa2b0e34"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "8df6b2d0-ba00-4b99-b462-5259dd9d8089",
+      "name": "Test 9.2",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/auth/refresh",
+      "method": "POST",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "Postmate Client",
+        "Content-Type": "application/json"
+      },
+      "tests": [],
+      "preRequestScript": "",
+      "testScript": "",
+      "id": "6a7bbf93-b002-44b4-82ca-1af513a42285",
+      "name": "Test 9.3",
+      "collectionId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "containerId": "b3bccf8a-d4f2-4e00-a7ac-299acef00200",
+      "collectionName": "SecureCustomerAPI(new)",
+      "bodyFormat": "json",
+      "preRequests": [],
+      "auth": {
+        "type": "none"
+      },
+      "body": {
+        "json": {
+          "refreshToken": "99f2eeb3-e1cb-43b3-9855-6158aa2b0e34"
+        },
+        "xml": "",
+        "x-www-form-urlencoded": {},
+        "plainText": ""
+      }
+    }
+  ]
+}
